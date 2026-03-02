@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 
-
+#
 def global_instance_optimize(processed_clouds, view_poses, instance_poses):
     # 1. 收集每个实例在所有视角中的姿态
     instance_global_poses = {}
