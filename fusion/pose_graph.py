@@ -34,10 +34,10 @@ def build_instance_aware_graph(processed_clouds, top_k=5):
                 weight = overlaps[j] * instance_match
                 view_edges.append((i, j, weight))
     
-    # 3. 构建实例间边：同一实例在不同视角的对应边
+    # 3. 构建实例间边：同一实例在不同视角的对应边  
     instance_edges = []
     # 先统计所有实例ID
-    all_instances = set()
+    all_instances = set()           
     for cloud in processed_clouds:
         instance_masks = cloud["instance_masks"]
         if instance_masks.is_cuda:

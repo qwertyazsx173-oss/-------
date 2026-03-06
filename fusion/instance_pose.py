@@ -87,7 +87,7 @@ def get_instance_inlier_ratio(processed_cloud_i, processed_cloud_j, instance_id)
     
     if instance_pcd_i is None or instance_pcd_j is None:
         return 0.0
-    
+    #
     # 计算该实例在两个视角间的相对姿态
     relative_pose = compute_instance_relative_pose(processed_cloud_i, processed_cloud_j, instance_id)
     # 将视角i的实例点云变换到视角j的坐标系
